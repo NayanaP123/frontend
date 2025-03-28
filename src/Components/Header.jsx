@@ -13,7 +13,7 @@ function Header() {
   const navigate=useNavigate()
 
   const handlebuttonLogin=()=>{
-    navigate('/login')
+    navigate('/buttons')
   }
   const handlebuttonRegister=()=>{
     navigate('/register')

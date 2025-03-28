@@ -1,12 +1,19 @@
 import React, { useContext, useState } from 'react';
 
-import { Link } from "react-router-dom";
-import { FaHome, FaUser, FaCalendarAlt, FaClipboardList, FaBook, FaBullhorn, FaBars } from "react-icons/fa";import "./Sidebar.css"; 
+import { Link, useNavigate } from "react-router-dom";
+import { FaHome, FaUser, FaCalendarAlt, FaClipboardList, FaBook, FaBullhorn, FaBars, FaSignOutAlt } from "react-icons/fa";import "./Sidebar.css"; 
 import { StudentContext } from './StudentContext';
 
 function StudentSideBar() {
   const { activeComponent,setActiveComponent } = useContext(StudentContext);
   const [isOpen, setIsOpen] = useState(true);
+  const navigate = useNavigate(); 
+
+  const handleLogout = () => {
+   
+    console.log("Logging out...");
+    navigate("/studentlogin"); 
+  };
 
   return (
     <div 
@@ -62,6 +69,22 @@ function StudentSideBar() {
                 </li>
                 </button>
              
+
+
+                <button 
+          style={{
+            width: '100%',
+            backgroundColor: 'red',
+            color: 'white',
+            marginTop: '20px'
+          }} 
+          onClick={handleLogout}
+        >
+          <li className="cursor-pointer hover:text-gray-400">
+            <FaSignOutAlt className="icon" /> &nbsp;
+            {isOpen && <span className='text'>Logout</span>}
+          </li>
+        </button>
               </ul>
             </div>
   );

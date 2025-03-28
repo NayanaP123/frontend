@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 
-import { Link } from "react-router-dom";
-import { FaHome, FaChalkboardTeacher, FaBook, FaUserGraduate, FaUserTie, FaClipboardList, FaCalendarAlt, FaCheckCircle, FaFileAlt, FaBullhorn, FaBars, FaUser } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
+import { FaHome, FaChalkboardTeacher, FaBook, FaUserGraduate, FaUserTie, FaClipboardList, FaCalendarAlt, FaCheckCircle, FaFileAlt, FaBullhorn, FaBars, FaUser, FaSignOutAlt } from "react-icons/fa";
 import "./Sidebar.css"; 
 import { AdminContext } from './Admin/AdminContext';
 
@@ -9,7 +9,13 @@ import { AdminContext } from './Admin/AdminContext';
 function SideBar() {
   const { activeComponent,setActiveComponent } = useContext(AdminContext);
   const [isOpen, setIsOpen] = useState(true);
+  const navigate = useNavigate();
 
+  const handleLogout = () => {
+    // Perform logout logic here (clear auth tokens, local storage, etc.)
+    console.log("Logging out...");
+    navigate("/login"); // Redirect to login page after logout
+  };
   return (
     <div 
       className={`sidebar ${isOpen ? "open" : "closed"}`}  
@@ -95,6 +101,23 @@ function SideBar() {
         <FaBullhorn className="icon" /> &nbsp;
         {isOpen && <span className='text'>Notice</span>}
         </li>
+        </button>
+
+
+         {/* Logout Button */}
+         <button 
+          style={{
+            width: '100%',
+            backgroundColor: 'red',
+            color: 'white',
+            marginTop: '20px'
+          }} 
+          onClick={handleLogout}
+        >
+          <li className="cursor-pointer hover:text-gray-400">
+            <FaSignOutAlt className="icon" /> &nbsp;
+            {isOpen && <span className='text'>Logout</span>}
+          </li>
         </button>
      
       </ul>
