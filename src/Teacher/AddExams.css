@@ -1,0 +1,91 @@
+.exams-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #1e1e2e;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #facc15;
+  }
+  
+  .class-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .class-selection select {
+    padding: 8px;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    border: 1px solid #facc15;
+    cursor: pointer;
+  }
+  
+  .exams-list {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #292a36;
+    border-radius: 5px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    text-align: center;
+  }
+  
+  th {
+    background: #facc15;
+    color: black;
+  }
+  
+  td {
+    color: white;
+  }
+  
+  .add-exam {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .add-exam input,
+  .add-exam select {
+    padding: 8px;
+    margin: 5px;
+    width: 30%;
+    border-radius: 5px;
+    border: 1px solid #facc15;
+    background: #222;
+    color: white;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background: #facc15;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #ffcc00;
+  }
+  

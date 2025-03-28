@@ -1,0 +1,50 @@
+.attendance-container {
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: white;
+    min-height: 100vh;
+}
+
+.attendance-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.class-selector {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.student-list {
+    margin-top: 20px;
+}
+
+.student-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.attendance-dropdown {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

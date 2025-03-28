@@ -1,0 +1,78 @@
+.timetable-container {
+    background-color: #f9f9e0; /* Light background */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .timetable-container h2 {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .class-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .class-selection label {
+    font-size: 16px;
+  }
+  
+  .class-selection select {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .schedule-table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .schedule-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .schedule-table th {
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .schedule-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .schedule-table td {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .schedule-table th, .schedule-table td {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+  

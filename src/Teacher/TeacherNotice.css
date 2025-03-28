@@ -1,0 +1,44 @@
+.notice-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #1e1e2e;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #facc15;
+  }
+  
+  .notice-card {
+    background: #2a2b3d;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 5px solid #facc15;
+  }
+  
+  .notice-card h3 {
+    margin: 0;
+    color: #ffcc00;
+  }
+  
+  .notice-card p {
+    margin: 5px 0;
+    color: white;
+  }
+  
+  .date {
+    font-size: 12px;
+    color: #bbb;
+  }
+  
+  .no-notices {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+  }
+  

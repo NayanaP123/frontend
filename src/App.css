@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color:beige;
+    width:100vw;
+    height: 100vh;
+    user-select: none;
+    overflow-x: hidden;
+    
+}
+
+h6{
+    color: rgb(83, 83, 83);
+
+}
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .content {
+    margin-left: 250px; /* Same width as sidebar */
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 60px;
+      text-align: center;
+      font-size: 14px;
+    }
+  
+    .content {
+      margin-left: 60px;
+    }
+  }
+
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+  }
+  
+  .marquee-content {
+    display: flex;
+    gap: 20px; /* Adjust spacing between cards */
+    animation: marqueeScroll 18s linear infinite;
+  }
+  
+  .marquee-item {
+    flex: 0 0 auto;
+    width: 18rem; /* Match card width */
+  }
+  
+  @keyframes marqueeScroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  
+/* 
+:root{
+    --color-primary:#738oec;
+
+}
+
+a{
+    color: blue;
+}
+
+img{
+    display: block;
+    width: 100%;
+} */
+
+/* webflow website builder */

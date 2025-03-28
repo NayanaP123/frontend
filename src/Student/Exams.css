@@ -1,0 +1,33 @@
+.exams-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .class-name {
+    color: #007bff;
+    font-size: 18px;
+  }
+  
+  .exam-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .exam-table th, .exam-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .exam-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .exam-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
